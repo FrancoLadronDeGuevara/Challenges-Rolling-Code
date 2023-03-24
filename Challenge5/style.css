@@ -1,0 +1,39 @@
+body{
+    background-color: darkgray;
+  }
+  
+  h3{
+    font-size: 21px;
+  }
+  
+  fieldset{
+    background-color:crimson;
+    border: 0;
+    border-radius: 10px;
+    width: 540px;
+    font-family: Verdana;
+  }
+  
+  legend{
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin-left: 15px;
+  }
+  
+  table{
+      border: 0;
+  }
+  
+  th{
+      color: white;
+      background-color: rgb(81, 162, 181);
+      padding: 10px;
+      border: 0;
+  }
+  
+  td{
+      background-color: bisque;
+    padding: 10px;
+      border: 0;
+  }

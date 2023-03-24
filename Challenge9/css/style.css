@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e6e6e6;
+    font-size: 15px;
+  }
+  
+  .container {
+    width: 80vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .element {
+    background-color: white;
+    width: 145px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.18rem;
+  }
+  
+  .svg {
+    width: 23px;
+    height: 23px;
+    fill: #ff547b;
+    border: #ff547b solid 2px;
+    border-radius: 50px;
+    margin: 0 0.2rem;
+    background-color: white;
+  }
+  
+  .element:hover {
+    background-color: #a70024;
+    color: white;
+  }
+  
+  #unique {
+    width: 23px;
+    height: 23px;
+    fill: #dd0e38;
+    border-radius: 50px;
+    margin: 0 0.2rem;
+  }
+  

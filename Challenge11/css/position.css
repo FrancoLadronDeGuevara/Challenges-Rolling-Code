@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --azul-fuerte: #2d3284;
+  --azul-claro: #4177bc;
+  --blanco: #ffffff;
+}
+
+body {
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--azul-fuerte) 0px,
+    var(--azul-fuerte) 100px,
+    var(--azul-claro) 100px,
+    var(--azul-claro) 105px,
+    var(--azul-fuerte) 105px,
+    var(--azul-fuerte) 130px,
+    var(--azul-claro) 130px,
+    var(--azul-claro) 260px,
+    var(--blanco) 260px,
+    var(--blanco) 265px,
+    var(--azul-claro) 265px,
+    var(--azul-claro) 270px,
+    var(--blanco) 270px,
+    var(--blanco) 330px
+  );
+  width: 100vw;
+  height: 100vh;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 3.125rem;
+  background-color: #7ec1f1cc;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2d3284;
+  font-size: 1.25rem;
+}
+li::marker {
+  content: "";
+}
+.underline-effect {
+  display: inline-block;
+  position: relative;
+  color: #103d53;
+}
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.underline-effect:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-principal{
+  background-image: url("../assets/testIMG.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 80%;
+  height: 353px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-principal span{
+  font-size: 3rem;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.39);
+  border-radius: 0.625rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #7ec1f1cc;
+  border-top-left-radius: 3.125rem;
+  border-top-right-radius: 3.125rem;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+footer span {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+footer img {
+  width: 5rem;
+  height: 4rem;
+  align-self: center;
+  cursor: pointer;
+  transition: all 1s;
+}
+footer img:hover {
+  transform: translateY(-50px) scale(2);
+}
+
+@media (max-width:768px){
+  *{
+    font-size: 14px;
+  }
+  .imagen-principal{
+    background-size: contain;
+  }
+  .imagen-principal span{
+    font-size: 24px;
+  }
+}
+
+@media (max-width:480px){
+  *{
+    font-size: 10px;
+  }
+  .imagen-principal{
+    background-size: contain;
+  }
+  .imagen-principal span{
+    font-size: 16px;
+  }
+}

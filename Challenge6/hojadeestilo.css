@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  .main {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .main header {
+    background-color: #5472f0;
+    position: relative;
+    height: 5em;
+  }
+  
+  .flecha {
+    position: absolute;
+    margin: 1% 2%;
+  }
+  
+  .noti {
+    font-family: "Segoe UI";
+    color: #fff;
+    position: absolute;
+    margin: 1% 45%;
+  }
+  
+  @media (max-width: 576px) {
+    body {
+      font-size: 8px;
+    }
+    .noti {
+      margin-left: 40%;
+    }
+  
+    #forma {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  

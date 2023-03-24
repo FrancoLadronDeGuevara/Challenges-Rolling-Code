@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <header>
+        <navbar>
+            <ul>
+                <li><a class="underline-effect" href="../index.html">Inicio</a></li>
+                <li><a class="underline-effect" href="./form.html">Formulario</a></li>
+                <li><a class="underline-effect" href="./boxModel.html">BoxModel</a></li>
+                <li><a class="underline-effect" href="./position.html">Position</a></li>
+                <li><a class="underline-effect" href="./tablas.html">Tablas</a></li>
+            </ul>
+        </navbar>
+    </header>
+    <main class="formulario">
+        <form method="get">
+            <div class="texto-pass">
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+
+            <input type="email" name="email" id="email" placeholder="E-mail">
+
+            <div class="option-date">
+                <select name="Pais" id="Pais">
+                    <option class="option" value="Usa">Opcion A</option>
+                    <option class="option" value="Ru">Opcion B</option>
+                    <option class="option" value="Ru">Opcion C</option>
+                </select>
+                <input type="date" name="fecha" id="fecha">
+            </div>
+
+            <div class="radio">
+                <label for="radio"></label>
+                <input type="radio" id="radio" name="radio" value="Y">
+                <input type="radio" id="radio" name="radio" value="N">
+            </div>
+
+            <textarea name="textarea" placeholder="Dejenos su consulta" rows="5"></textarea>
+
+            <input type="checkbox" name="checkbox" id="checkbox">
+
+            <div class="btn">
+                <button>Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <span>© Creado por</span>
+        <img src="../assets/textoVC.png" alt="VANGACode">
+        <span> - Todos los derechos reservados</span>
+    </footer>
+</body>
+
+</html>
