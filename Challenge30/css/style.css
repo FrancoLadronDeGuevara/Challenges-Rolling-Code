@@ -1,0 +1,8 @@
+.seleccionado{
+    background-color: dodgerblue !important;
+    border-radius: 1rem;
+}
+
+#piedra, #papel, #tijera{
+    cursor: pointer;
+}
