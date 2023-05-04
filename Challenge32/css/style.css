@@ -1,0 +1,52 @@
+.body{
+    background-image: url("../img/playa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pirata{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.barco{
+    position: absolute;
+    right: 0;
+    animation: slideInRight;
+    animation-duration: 1s;
+}
+
+#inputBarco{
+    position: absolute;
+    bottom: 10rem;
+    left: 11rem;
+}
+
+#inputPersonas{
+    position: absolute;
+    bottom: 7rem;
+    left: 11rem;
+}
+
+#calcularSaqueo{
+    position: absolute;
+    bottom: 3rem;
+    left: 11rem;
+}
+
+#textoSaquear{
+    text-shadow: black 5px 5px 5px;
+    position: absolute;
+    top: 15rem;
+    left: 10rem;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+#audio{
+    display: none;
+}

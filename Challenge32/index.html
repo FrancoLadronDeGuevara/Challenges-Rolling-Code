@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 32</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="body">
+    <div class="container">
+        <img src="./img/pirata.png" alt="pirata" class="img-fluid pirata" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="¿Podré saquearlo?">
+        
+        <h1 class="display-4 text-danger fw-bolder d-none" id="textoSaquear">¡¡A SAQUEARLOOOOO!!</h1>
+        <audio id="audio" controls>
+        <source type="audio/mp3" src="./assets/music.mp3">
+        </audio>
+            <div class="input-group w-25" id="inputBarco">
+                <input type="number" id="pesoBarco" class="form-control" min="100" max="1000" step="10" placeholder="¿Cuánto pesa el barco?" required>
+                <span class="input-group-text">KG</span>
+            </div>
+            <div class="input-group w-25" id="inputPersonas">
+                <input type="number" id="cantidadPersonas" class="form-control" min="1" max="200" placeholder="¿Cuántos tripulantes hay en el barco?" required>
+            </div>
+            <button class="btn btn-danger fw-bold shadow" id="calcularSaqueo">Calcular saqueo</button>
+
+        <img src="./img/barco.png" alt="barco" class="img-fluid barco">
+        
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>
