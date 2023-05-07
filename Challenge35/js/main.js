@@ -80,7 +80,7 @@ listaLibrosFranco.agregarLibro(libroCuatro);
 listaLibrosFranco.agregarLibro(libroCinco);
 listaLibrosFranco.agregarLibro(libroSeis);
 
-//VEMOS POR CONSOLA QUE TENEMOS 3 LIBROS LEIDOS Y 3 NO LEIDOSWWEWZZA
+//VEMOS POR CONSOLA QUE TENEMOS 3 LIBROS LEIDOS Y 3 NO LEIDOS
 console.log(listaLibrosFranco);
 //OBTENEMOS EL SIGUIENTE LIBRO NO LEIDO (LIBRO TRES)
 console.log(listaLibrosFranco.obtenerSiguienteLibro());
