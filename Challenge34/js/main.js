@@ -66,18 +66,11 @@ class Persona{
     }
 
     mostrarDatos(){
-        if(nombre.value == "" || edad.value == "" || dni.value == "" || peso.value == "" || altura.value == "" || genero == undefined){
-            alert("Te falto ingresar uno o más datos");
-            modal.classList.add("d-none");
-            location.reload();
-        }else{
             titleModal.innerText = `Datos del formulario:`
             bodyModal.innerHTML = `Nombre:\t<b>${this.nombre}</b><br>Edad:\t<b>${this.edad} años</b><br>
             DNI:\t<b>${this.dni}</b><br>Sexo:\t<b>${this.sexo}</b><br>Peso:\t<b>${this.peso} Kg</b><br>
             Altura:\t<b>${this.altura} cm</b><br>Año de nacimiento:\t<b>${this.anio}</b><br>
             Generación:\t<b>${this.mostrarGeneracion()}</b><br>${this.esMayorDeEdad()}`
-            
-        }
     }
 }
 
@@ -120,6 +113,25 @@ rangoAnio.addEventListener("change", ()=>{
 })
 
 botonEnviar.addEventListener("click", ()=>{
-    let nuevaPersona = new Persona(nombre.value, edad.value, dni.value, genero, peso.value, altura.value, rangoAnio.value);
-    nuevaPersona.mostrarDatos();
+    if(nombre.value == "" || edad.value == "" || dni.value == "" || peso.value == "" || altura.value == "" || genero == undefined){
+        alert("Te falto ingresar uno o más datos");
+        modal.classList.add("d-none");
+        location.reload();
+    }
+    else if(dni.value<0 || dni.value>99999999){
+        alert("DNI inválido");
+        location.reload();
+    }
+    else if(peso.value<45 || peso.value>200){
+        alert("El peso introducido es inválido");
+        location.reload();
+    }
+    else if(altura.value<146 || altura.value>2000){
+        alert("La altura introducida es inválida");
+        location.reload();
+    }
+    else{
+        let nuevaPersona = new Persona(nombre.value, edad.value, dni.value, genero, peso.value, altura.value, rangoAnio.value);
+        nuevaPersona.mostrarDatos();
+    }
 })
